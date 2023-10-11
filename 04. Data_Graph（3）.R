@@ -22,12 +22,12 @@ barplot(entry,legend = TRUE)
 pie(table(X2023_STB_survey $Grade))
 
 # X2023_STB_survey의Age인자를가지고히스토그램을작성
-hist(X2023_STB_survey$나이, main="나이", col=terrain.colors(12))
+hist(X2023_STB_survey$Age, main="age", col=terrain.colors(12))
 
 #X2023_STB_survey의Grade별Age를비교하는박스플롯
-boxplot(X2023_STB_survey$나이,X2023_STB_survey$등급, main="Grade Age", col="blue", names = c("나이","등급"))
+boxplot(X2023_STB_survey$Age,X2023_STB_survey$Grade, main="Grade Age", col="blue", names = c("age","grade"))
 
 #X2023_STB_survey의Grade를X값으로Age를Y값으로하는산점도
-plot(x=X2023_STB_survey$등급, y=X2023_STB_survey$나이, xlab="등급", ylab="나이", main="Grade Age")
-plot(x=X2023_STB_survey$등급, y=X2023_STB_survey$나이, xlab="등급", ylab="나이", main="Grade Age",pch=24, col="red", bg="yellow", cex=1.5)
-plot(x=X2023_STB_survey$등급, y=X2023_STB_survey$나이, xlab="등급", ylab="나이", main="Grade Age",type="h")
+plot(x=X2023_STB_survey$Grade, y=X2023_STB_survey$Age, xlab="grade", ylab="age", main="Grade Age")
+plot(x=X2023_STB_survey$Grade, y=X2023_STB_survey$Age, xlab="grade", ylab="age", main="Grade Age",pch=24, col="red", bg="yellow", cex=1.5)
+plot(x=X2023_STB_survey$Grade, y=X2023_STB_survey$Age, xlab="grade", ylab="age", main="Grade Age",type="h")
